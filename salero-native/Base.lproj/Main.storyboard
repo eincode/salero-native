@@ -79,7 +79,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="login:" destination="bQv-Ku-yYb" eventType="touchUpInside" id="90t-EK-swD"/>
+                                                    <action selector="login" destination="bQv-Ku-yYb" eventType="touchUpInside" id="rl4-PV-ITH"/>
                                                 </connections>
                                             </button>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gah-UW-RMv">
