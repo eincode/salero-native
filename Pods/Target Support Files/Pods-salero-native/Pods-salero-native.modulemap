@@ -1,0 +1,6 @@
+framework module Pods_salero_native {
+  umbrella header "Pods-salero-native-umbrella.h"
+
+  export *
+  module * { export * }
+}
