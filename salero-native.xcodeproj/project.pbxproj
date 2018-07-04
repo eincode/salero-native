@@ -12,6 +12,8 @@
 		A55DDEF020E253C7002D50F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DDEEE20E253C7002D50F3 /* Main.storyboard */; };
 		A55DDEF220E253C7002D50F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55DDEF120E253C7002D50F3 /* Assets.xcassets */; };
 		A55DDEF520E253C7002D50F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DDEF320E253C7002D50F3 /* LaunchScreen.storyboard */; };
+		A55DDEFE20E2565D002D50F3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DDEFD20E2565D002D50F3 /* Login.swift */; };
+		A5681A4920EC9DA700C48299 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5681A4820EC9DA700C48299 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A55DDEF120E253C7002D50F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55DDEF420E253C7002D50F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55DDEF620E253C7002D50F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55DDEFD20E2565D002D50F3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A5681A4820EC9DA700C48299 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		A55DDEE920E253C7002D50F3 /* salero-native */ = {
 			isa = PBXGroup;
 			children = (
+				A55DDEFC20E253F7002D50F3 /* View */,
 				A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */,
 				A55DDEEC20E253C7002D50F3 /* ViewController.swift */,
 				A55DDEEE20E253C7002D50F3 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				A55DDEF620E253C7002D50F3 /* Info.plist */,
 			);
 			path = "salero-native";
+			sourceTree = "<group>";
+		};
+		A55DDEFC20E253F7002D50F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A55DDEFD20E2565D002D50F3 /* Login.swift */,
+				A5681A4820EC9DA700C48299 /* Register.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55DDEFE20E2565D002D50F3 /* Login.swift in Sources */,
 				A55DDEED20E253C7002D50F3 /* ViewController.swift in Sources */,
+				A5681A4920EC9DA700C48299 /* Register.swift in Sources */,
 				A55DDEEB20E253C7002D50F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
