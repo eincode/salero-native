@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uBz-mm-Ai6">
-                                <rect key="frame" x="25.5" y="277" width="324" height="112"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="L3T-py-3Yw">
+                                <rect key="frame" x="25.5" y="278" width="324" height="111"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.39607843139999999" green="0.32156862749999998" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uBz-mm-Ai6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9aF-Ko-HuF"/>
-                            <constraint firstItem="uBz-mm-Ai6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="z9d-xY-k9I"/>
+                            <constraint firstItem="L3T-py-3Yw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2a0-QR-4ln"/>
+                            <constraint firstItem="L3T-py-3Yw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W7m-nd-qZw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="324" height="112"/>
+        <image name="logo" width="324" height="111"/>
     </resources>
 </document>

@@ -34,6 +34,13 @@ class Login: UIViewController, UITextFieldDelegate {
     @IBAction func login() {
         activityIndicator.isHidden = false
         loginButton.setTitleColor(UIColor.clear, for: .normal )
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            
+            // Navigate to home screen
+            let storyboard = self.storyboard
+            let controller = storyboard?.instantiateViewController(withIdentifier: "rootTabBar") as! RootTab
+            self.show(controller, sender: nil)
+        })
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

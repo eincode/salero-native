@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5FB25C4CA5D3EBDDCD1D5F1F /* Pods_salero_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDF90982272A2F54CFD44D9 /* Pods_salero_native.framework */; };
+		A541C65920EDEE61000332B7 /* RootTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65820EDEE61000332B7 /* RootTab.swift */; };
+		A541C65C20EDF013000332B7 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65B20EDF013000332B7 /* ProductModel.swift */; };
+		A541C65F20EDF19A000332B7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65E20EDF19A000332B7 /* Menu.swift */; };
 		A55DDEEB20E253C7002D50F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */; };
 		A55DDEED20E253C7002D50F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DDEEC20E253C7002D50F3 /* ViewController.swift */; };
 		A55DDEF020E253C7002D50F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DDEEE20E253C7002D50F3 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		08E7022229497648000FA000 /* Pods-salero-native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salero-native.debug.xcconfig"; path = "Pods/Target Support Files/Pods-salero-native/Pods-salero-native.debug.xcconfig"; sourceTree = "<group>"; };
 		9DDF90982272A2F54CFD44D9 /* Pods_salero_native.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_salero_native.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB66C18A094C32FAE4577F5 /* Pods-salero-native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salero-native.release.xcconfig"; path = "Pods/Target Support Files/Pods-salero-native/Pods-salero-native.release.xcconfig"; sourceTree = "<group>"; };
+		A541C65820EDEE61000332B7 /* RootTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTab.swift; sourceTree = "<group>"; };
+		A541C65B20EDF013000332B7 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		A541C65E20EDF19A000332B7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		A55DDEE720E253C7002D50F3 /* salero-native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "salero-native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55DDEEC20E253C7002D50F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +58,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A541C65A20EDEFFE000332B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A541C65B20EDF013000332B7 /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A541C65D20EDF177000332B7 /* Root tab */ = {
+			isa = PBXGroup;
+			children = (
+				A541C65820EDEE61000332B7 /* RootTab.swift */,
+				A541C65E20EDF19A000332B7 /* Menu.swift */,
+			);
+			path = "Root tab";
+			sourceTree = "<group>";
+		};
 		A55DDEDE20E253C7002D50F3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +96,7 @@
 		A55DDEE920E253C7002D50F3 /* salero-native */ = {
 			isa = PBXGroup;
 			children = (
+				A541C65A20EDEFFE000332B7 /* Model */,
 				A55DDEFC20E253F7002D50F3 /* View */,
 				A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */,
 				A55DDEEC20E253C7002D50F3 /* ViewController.swift */,
@@ -87,6 +111,7 @@
 		A55DDEFC20E253F7002D50F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A541C65D20EDF177000332B7 /* Root tab */,
 				A55DDEFD20E2565D002D50F3 /* Login.swift */,
 				A5681A4820EC9DA700C48299 /* Register.swift */,
 			);
@@ -215,9 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55DDEFE20E2565D002D50F3 /* Login.swift in Sources */,
+				A541C65C20EDF013000332B7 /* ProductModel.swift in Sources */,
+				A541C65F20EDF19A000332B7 /* Menu.swift in Sources */,
 				A55DDEED20E253C7002D50F3 /* ViewController.swift in Sources */,
 				A5681A4920EC9DA700C48299 /* Register.swift in Sources */,
 				A55DDEEB20E253C7002D50F3 /* AppDelegate.swift in Sources */,
+				A541C65920EDEE61000332B7 /* RootTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
