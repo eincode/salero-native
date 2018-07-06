@@ -11,6 +11,7 @@
 		A541C65920EDEE61000332B7 /* RootTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65820EDEE61000332B7 /* RootTab.swift */; };
 		A541C65C20EDF013000332B7 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65B20EDF013000332B7 /* ProductModel.swift */; };
 		A541C65F20EDF19A000332B7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C65E20EDF19A000332B7 /* Menu.swift */; };
+		A541C66220EE5273000332B7 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541C66120EE5273000332B7 /* MenuCell.swift */; };
 		A55DDEEB20E253C7002D50F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */; };
 		A55DDEED20E253C7002D50F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DDEEC20E253C7002D50F3 /* ViewController.swift */; };
 		A55DDEF020E253C7002D50F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DDEEE20E253C7002D50F3 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		A541C65820EDEE61000332B7 /* RootTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTab.swift; sourceTree = "<group>"; };
 		A541C65B20EDF013000332B7 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		A541C65E20EDF19A000332B7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A541C66120EE5273000332B7 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		A55DDEE720E253C7002D50F3 /* salero-native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "salero-native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55DDEEA20E253C7002D50F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55DDEEC20E253C7002D50F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = "Root tab";
 			sourceTree = "<group>";
 		};
+		A541C66020EE524C000332B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A541C66120EE5273000332B7 /* MenuCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A55DDEDE20E253C7002D50F3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		A55DDEFC20E253F7002D50F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A541C66020EE524C000332B7 /* Cell */,
 				A541C65D20EDF177000332B7 /* Root tab */,
 				A55DDEFD20E2565D002D50F3 /* Login.swift */,
 				A5681A4820EC9DA700C48299 /* Register.swift */,
@@ -245,6 +256,7 @@
 				A55DDEED20E253C7002D50F3 /* ViewController.swift in Sources */,
 				A5681A4920EC9DA700C48299 /* Register.swift in Sources */,
 				A55DDEEB20E253C7002D50F3 /* AppDelegate.swift in Sources */,
+				A541C66220EE5273000332B7 /* MenuCell.swift in Sources */,
 				A541C65920EDEE61000332B7 /* RootTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "id.ignitech.salero-native";
+				PRODUCT_BUNDLE_IDENTIFIER = id.salero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "id.ignitech.salero-native";
+				PRODUCT_BUNDLE_IDENTIFIER = id.salero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

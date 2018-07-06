@@ -8,12 +8,21 @@
 
 import UIKit
 
-class Menu: UIViewController {
+let P001 = ProductModel(name: "Paket Keluarga", description: ["1","2"], image: "P001", price: "IDR 30k")
 
+let P002 = ProductModel(name: "Paket Super", description: ["1","2"], image: "P002", price: "IDR 25k")
+
+let products = [P001, P002]
+
+class Menu: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +30,23 @@ class Menu: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCellReuseIdentifier") as! MenuCell
+        
+        cell.productTitle.text = products[indexPath.row].productName
+        cell.productPrice.text = products[indexPath.row].productPrice
+        cell.productImage.image = UIImage(named: "P001")
+        cell.productDescription.text = products[indexPath.row].description[0]
+        
+        return cell
+    }
 
 }
