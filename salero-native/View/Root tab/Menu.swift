@@ -8,9 +8,9 @@
 
 import UIKit
 
-let P001 = ProductModel(name: "Paket Keluarga", description: ["1","2"], image: "P001", price: "IDR 30k")
+let P001 = ProductModel(name: "Paket Keluarga", description: ["1","2"], image: "P0001", price: "IDR 30k")
 
-let P002 = ProductModel(name: "Paket Super", description: ["1","2"], image: "P002", price: "IDR 25k")
+let P002 = ProductModel(name: "Paket Super", description: ["1","2"], image: "P0002", price: "IDR 25k")
 
 let products = [P001, P002]
 
@@ -43,7 +43,7 @@ class Menu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         cell.productTitle.text = products[indexPath.row].productName
         cell.productPrice.text = products[indexPath.row].productPrice
-        cell.productImage.image = UIImage(named: "P001")
+        cell.productImage.image = UIImage(named: products[indexPath.row].productImage)
         cell.productDescription.text = products[indexPath.row].description[0]
         
         return cell
